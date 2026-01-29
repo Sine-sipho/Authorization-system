@@ -1,0 +1,32 @@
+{
+  "name": "responsive-login-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sine-sipho/Login-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sine-sipho/Login-form/issues"
+  },
+  "homepage": "https://github.com/Sine-sipho/Login-form#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

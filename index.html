@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=PT+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <div class="registration-form">
+      <div class="form-container sign-in">
+        <div class="login">
+          <h1 class="heading">Welcome back!</h1>
+          <p class="message-error"></p>
+          <div class="form">
+            <form id="form" action="" method="GET">
+              <div class="input-icon">
+                <span class="material-symbols-outlined icon">email</span>
+                <input
+                  type="Email"
+                  placeholder="Email"
+                  class="input email"
+                  autocomplete="off"
+                  name="email-address"
+                  id="email"
+                />
+                <br />
+                <span class="material-symbols-outlined icon">lock</span>
+                <input
+                  type="Password"
+                  placeholder="Password"
+                  class="input Password"
+                  name="password"
+                  id="password"
+                />
+              </div>
+              <br />
+              <p class="forgot-details">
+                <a href="#" target>Forgot Password?</a>
+              </p>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+        <div class="create-account">
+          <div class="register">
+            <h1 class="not-member">Not a Member?</h1>
+            <p class="link-button">
+              <a href="#" id="showSignup">Registration</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registrattion page -->
+
+      <div class="form-container sign-up">
+        <div class="new-account">
+          <h1 class="heading">Create Account</h1>
+          <p class="signup-error">Hello</p>
+          <div class="registration-fom">
+            <div class="form">
+              <form id="signup-form" action="" method="" >
+                <div class="input-icon">
+                  <span class="material-symbols-outlined icon">person</span>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="input registration-input"
+                    id="signup-name"
+                    name="full-name"
+                  />
+                  <br />
+                  <span class="material-symbols-outlined icon">email</span>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="input registration-input"
+                    id="signup-email"
+                    name="email-address"
+                  />
+                  <br />
+                  <span class="material-symbols-outlined icon">lock</span>
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="input registration-input"
+                    id="signup-password"
+                    name="password"
+                  />
+                  <br />
+                  <button type="submit" id="signup-button">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Login welcome back -->
+        <div class="login-instead">
+          <div class="log-in">
+            <h1 class="welcome-back">Welcome back</h1>
+            <p class="link-button"><a href="#" id="showSignin">Sign in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert-overlay">
+      <div class="alert-box">
+        <div class="close" id="close-popup">
+          <span class="material-symbols-outlined icon">close</span>
+        </div>
+        <div class="site-alert">
+          <span class="material-symbols-outlined icon" id="check">check</span>
+          <p id="message">Wooho! you have successfully created your account.</p>
+          <p id="link"><a href="" target="_blank">Visit site</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
