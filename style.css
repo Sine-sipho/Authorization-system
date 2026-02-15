@@ -146,6 +146,40 @@ button:active {
 .link-button:hover {
   opacity: 0.8;
 }
+/* Redex requirements */
+
+.password-requirements{
+  width: 400px;
+  max-width: 90%;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px gainsboro;
+  padding: 10px 30px;
+  line-height: 2rem;
+  position: absolute;
+  top: 70%;
+  z-index: 1000;
+  display: none;
+}
+.password-requirements p{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+.password-requirements ul{
+  list-style-type: none;
+  font-size: 0.9rem;
+}
+.password-requirements li{
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.password-requirements .icon{
+  font-size: 0.8rem;
+  color: teal;
+}
 .alert-overlay {
   position: fixed;
   top: 0;
@@ -245,5 +279,8 @@ button:active {
     left: 0;
     bottom: 0;
     border-radius: 0;
+  }
+  .password-requirements{
+    top: 45%;
   }
 }

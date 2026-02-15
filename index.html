@@ -32,7 +32,7 @@
           <h1 class="heading">Welcome back!</h1>
           <p class="message-error"></p>
           <div class="form">
-            <form id="form" action="" method="GET">
+            <form id="form" action="/signin" method="POST">
               <div class="input-icon">
                 <span class="material-symbols-outlined icon">email</span>
                 <input
@@ -79,7 +79,7 @@
           <p class="signup-error">Hello</p>
           <div class="registration-fom">
             <div class="form">
-              <form id="signup-form" action="" method="" >
+              <form id="signup-form" action="/signup" method="POST" >
                 <div class="input-icon">
                   <span class="material-symbols-outlined icon">person</span>
                   <input
@@ -111,6 +111,14 @@
                   <button type="submit" id="signup-button">Sign up</button>
                 </div>
               </form>
+              <div class="password-requirements" id="passwordRegexMessage">
+                <p>Your password must have:</p>
+                <ul>
+                  <li><span class="material-symbols-outlined icon">check</span><span>At least 8 characters</span></li>
+                  <li><span class="material-symbols-outlined icon">check</span><span>Uppercase and lowercase characters</span></li>
+                  <li><span class="material-symbols-outlined icon">check</span><span>At least 1 number.</span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
